@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js --open chrome",
-    "build": "webpack --config config/webpack.prod.js --env BUILD",
+    "build": "webpack --config config/webpack.prod.js --env BUILD --output-public-path /spa/",
     "jsdoc": "jsdoc -r src -d docs -R README.md -c jsdoc.json"
   },
   "devDependencies": {

@@ -63,6 +63,15 @@ const config = {
         // cleanStaleWebpackAssets: false
     }),
 
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: paths.static + '/inc',
+          to: paths.build + '/inc'
+        },
+      ],
+    }),
+
     new HtmlWebpackPlugin({
       filename: 'index.html',
       title: 'index@' + version,
