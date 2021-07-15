@@ -3,7 +3,7 @@ export const pages = {
   <div>
     <div class="content 404 align-center">
       <span class="margin-top-big radius-circle xlight-grey-background padding-big icon-unlink text-5xl text-faded-light"></span>
-      <p class="margin-medium text-xxl text-faded-light">Sorry, the page not found</p>
+      <p class="margin-medium text-xxl text-faded-light">Sorry, the page wasn't found</p>
       <a href="#" class="btn display-inline-block radius-5 light-grey-background padding-medium">Back to home</a>
     </div>
   </div>
