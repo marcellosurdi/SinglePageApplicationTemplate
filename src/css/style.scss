@@ -1,6 +1,14 @@
-* {
-  -webkit-user-select: none;
-}
+// Variabili e costrutti SASS
+@import 'globals';
+
+@import 'reset';
+@import 'positions';
+@import 'margins';
+@import 'backgrounds';
+@import 'icons';
+@import 'texts';
+@import 'classes';
+
 
 body {
   margin: 0px;

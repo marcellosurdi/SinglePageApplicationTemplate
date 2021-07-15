@@ -5,8 +5,8 @@
  * Entry point
  */
 
-import './css/style.css';
-import './css/pageslider.css';
+import './css/style.scss';
+import './css/pageslider.scss';
 import './js/custom';
 import { Route } from './js/route';
 

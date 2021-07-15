@@ -1,12 +1,12 @@
 # Single page application template
-![GitHub package.json version](https://img.shields.io/github/package-json/v/marcellosurdi/singlePageApplicationTemplate)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/marcellosurdi/SinglePageApplicationTemplate)
 
 Single page application (SPA) template using custom page transitions, sidenav, toast messages. Inspired by Christophe Coenraets's [PageSlider](https://github.com/ccoenraets/PageSlider).
 
 ## Usage
 Make sure that you have [Node.js](http://nodejs.org/) installed, then:
 1. Fork and clone the [GitHub repository](https://github.com/marcellosurdi/Webpack5Template).
-2. From the command line go to the local singlePageApplicationTemplate folder.
+2. From the command line go to the local SinglePageApplicationTemplate folder.
 3. Run `npm install` and wait for the necessary modules installation. [Webpack](https://webpack.js.org/guides/installation/#root) will be installed, look at the other dev dependencies in `package.json` file.
 
 ### Development server
