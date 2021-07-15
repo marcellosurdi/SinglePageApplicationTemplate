@@ -18,35 +18,16 @@
 }
 
 #header h1 {
-  margin: 0px;
-  text-align: center;
+  margin: 0 0 0 10px;
+  padding: 0;
   line-height: 44px;
   font-size: 20px;
-}
-
-#header .back {
-  position: absolute;
-  top: 5px;
-  left: 8px;
-  border-radius: 50%;
-  background-color: #0984c6;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  line-height: 32px;
-  text-decoration: none;
-  transform: translate3d(-100px, 0, 0);
-  transition-duration: .25s;
-}
-
-#header .back.visible {
-  transform: translate3d(0, 0, 0);
 }
 
 #header .menu {
   position: absolute;
   top: 5px;
-  right: 8px;
+  right: 10px;
   border-radius: 50%;
   background-color: #0984c6;
   width: 32px;
@@ -73,7 +54,7 @@
 }
 
 .page .content {
-  padding: 45px 10px;
+  padding: 55px 10px 0;
   overflow: auto;
 }
 

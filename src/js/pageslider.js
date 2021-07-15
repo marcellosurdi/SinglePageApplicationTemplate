@@ -8,7 +8,6 @@
 
 export function PageSlider( container ) {
   let current_page, history = [];
-  const back_button = document.querySelector( '#header .back' );
 
   // Use this function if you want PageSlider to automatically determine the sliding direction based on the state history
   this.slidePage = function( html ) {
@@ -27,13 +26,6 @@ export function PageSlider( container ) {
     } else {
       history.push( page );
       this.slidePageFrom( html, 'right' );
-    }
-
-    // Back button visibility
-    if( history.length > 1 ) {
-      back_button.classList.add( 'visible' );
-    } else {
-      back_button.classList.remove( 'visible' );
     }
   }
 

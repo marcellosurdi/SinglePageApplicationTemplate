@@ -1,24 +1,25 @@
 /**
- * @module pageslider
+ * @module route
  *
  * @desc
  * Route
  */
 
+import { pages } from './pages';
 import { PageSlider } from './pageslider';
 
 
 export function Route( container ) {
   let self = this;
-  let slider = new PageSlider( document.getElementById( 'container' ) );
-  container.addEventListener( 'beforeAnimation', redirect );
-  container.addEventListener( 'afterAnimation', redirect );
+  let slider = new PageSlider( container );
+  container.addEventListener( 'beforeAnimation', invokeMethod );
+  container.addEventListener( 'afterAnimation', invokeMethod );
   window.addEventListener( 'hashchange', route );
   route();
 
 
   function getPageDetails() {
-    var query_string = window.location.hash.slice( 1 );
+    let query_string = window.location.hash.slice( 1 );
     if( !query_string ) {
       query_string = 'index';
     }
@@ -38,25 +39,23 @@ export function Route( container ) {
     return { hash: page_name, params: params };
   }
 
-  function redirect( e ) {
-    var details = self.page_details;
+  function invokeMethod( e ) {
+    let page = self.page;
 
-    var method = e.type + 'On' + details.hash.charAt(0).toUpperCase() + details.hash.slice(1);
+    let method = e.type + 'On' + page.hash.charAt(0).toUpperCase() + page.hash.slice(1);
     if( self[ method ] ) {
-      self[ method ]( details.params );
+      self[ method ]( page.params );
     }
   }
 
   function route() {
     let html;
-    self.page_details = getPageDetails();
+    self.page = getPageDetails();
 
-    fetch( `inc/${ self.page_details.hash }.html` )
-      .then( response => {
-        if( response.ok ) return response.text();
-        else throw( response.status )
-      } )
-      .then( html => slider.slidePage( html ) )
-      .catch( error => console.log( error ) )
+    if( pages[ self.page.hash ] ) {
+      slider.slidePage( pages[ self.page.hash ] );
+    } else {
+      slider.slidePage( pages[ 404 ] );
+    }
   }
 }

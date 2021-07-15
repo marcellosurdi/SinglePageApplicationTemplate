@@ -26,10 +26,6 @@ a {
   text-decoration: underline;
 }
 
-.content > p {
-  clear: both;
-}
-
 .list {
   margin: 0;
   padding: 0;
