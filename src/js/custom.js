@@ -5,7 +5,7 @@
  * Custom code
  */
 
-import { Route } from './route';
+import { Route } from './core/route';
 
 
 Route.prototype = {

@@ -1,41 +1,5 @@
-<!doctype html><html><head><title>index@0.0.6</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="format-detection" content="telephone=no"><style>/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
-    /* The side navigation menu */
-    .sidenav {
-      height: 100%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 3; /* Stay on top */
-      top: 0; /* Stay at the top */
-      right: 0;
-      background-color: #111; /* Black*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
-      transition: 0.25s; /* 0.5 second transition effect to slide in the sidenav */
-    }
-
-    /* The navigation menu links */
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      left: 0px;
-      font-size: 36px;
-    }</style><script defer="defer" src="/spa/js/main.js"></script><link href="/spa/css/main.css" rel="stylesheet"></head><body><div id="sidenav" class="sidenav"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="#">About</a> <a href="#">Services</a> <a href="#">Clients</a> <a href="#">Contact</a></div><div id="body"><div id="header"><h1>SPA template</h1><a href="javascript:openNav()" class="menu icon-menu text-medium"></a></div><div id="container"></div></div><script>function openNav() {
-        document.getElementById("sidenav").style.width = "250px";
+<!doctype html><html><head><title>index@0.0.8</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="format-detection" content="telephone=no"><script defer="defer" src="/spa/js/main.js"></script><link href="/spa/css/main.css" rel="stylesheet"></head><body><nav id="sidenav" class="sidenav xlight-grey-background"><a href="javascript:void(0)" class="close light-grey-background icon-close icon-medium text-medium" onclick="closeNav()"></a><ul class="prova"><li><a href="#"><span class="xxlight-grey-background icon-padlock icon-small text-small"></span> Login</a></li><li><a href="#"><span class="xxlight-grey-background icon-user icon-small text-small"></span> User</a></li><li><a href="#"><span class="xxlight-grey-background icon-phone icon-small text-small"></span> Contacts</a></li><li><a href="#" class="has-children"><span class="xxlight-grey-background icon-marker icon-small text-small"></span> Where we are <button type="button"><span class="xlight-grey-background icon-arrow icon-small text-small"></span></button></a><ul class="sub-menu"><li><a href="#" class="has-children">Sub-item 1 <button type="button"><span class="xlight-grey-background icon-arrow icon-small text-small"></span></button></a><ul class="sub-menu"><li><a href="#">Sub-item 2</a></li><li><a href="#">Sub-item 3</a></li><li><a href="#">Sub-item 4</a></li></ul></li></ul></li><li><a href="#"><span class="xxlight-grey-background icon-faq icon-small text-small"></span> FAQ</a></li><li><a href="#"><span class="xxlight-grey-background icon-info icon-small text-small"></span> Privacy</a></li><li><a href="#" class="has-children"><span class="xxlight-grey-background icon-language icon-small text-small"></span> English <button type="button"><span class="xlight-grey-background icon-arrow icon-small text-small"></span></button></a><ul class="sub-menu"><li><a href="#">Italiano</a></li><li><a href="#">English</a></li><li><a href="#">Français</a></li><li><a href="#">Español</a></li></ul></li></ul></nav><div id="body"><header id="header"><h1>SPA template</h1><a href="javascript:openNav()" class="menu icon-menu icon-medium text-medium"></a></header><div id="container"></div></div><script>function openNav() {
+        document.getElementById("sidenav").style.width = "300px";
         document.getElementById("body").classList.add('shift')
       }
 

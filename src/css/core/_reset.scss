@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body, h1, h2, h3, h4, ul, ol, p, form, button { margin: 0; padding: 0; }
-html, body { height: 100%; font-size: 100%; line-height: 1.4; @include font-a; color: $text_color; }
+html, body { height: 100%; font-size: $text_big; line-height: 1.4; @include font-a; color: $text_color; }
 h2, h3, h4 { @include font-b; font-weight: normal; }
 ul li { list-style-type: none; }
 ul li.disc, ul.disc li, ol li { margin-left: 20px; }

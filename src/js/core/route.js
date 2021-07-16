@@ -5,7 +5,7 @@
  * Route
  */
 
-import { pages } from './pages';
+import { pages } from './../pages';
 import { PageSlider } from './pageslider';
 
 

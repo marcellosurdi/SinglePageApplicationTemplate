@@ -1,33 +1,12 @@
-// Variabili e costrutti SASS
-@import 'globals';
+@import 'core/globals';
+@import 'core/reset';
+@import 'core/positions';
+@import 'core/margins';
+@import 'core/backgrounds';
+@import 'core/icons';
+@import 'core/texts';
+@import 'core/classes';
 
-@import 'reset';
-@import 'positions';
-@import 'margins';
-@import 'backgrounds';
-@import 'icons';
-@import 'texts';
-@import 'classes';
-
-
-body {
-  margin: 0px;
-  padding: 0px;
-  font: 18px sans-serif;
-}
-
-#body {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  transition-duration: .25s;
-}
-
-#body.shift {
-  transform: translate3d(-250px, 0, 0);
-}
 
 a {
   color: inherit;
