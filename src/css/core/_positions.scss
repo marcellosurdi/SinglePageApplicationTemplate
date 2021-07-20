@@ -71,7 +71,7 @@
   // .w-1366-1 { width: 8.333%; }
 // }
 
-// @media screen and (max-width: 1152px) {
+@media screen and (max-width: 1152px) {
   // .to-1152 { display: none !important; }
   // .from-1152 { display: block !important; }
   // .w-1152-12 { width: 100%; }
@@ -83,10 +83,10 @@
   // .w-1152-6 { width: 50%; }
   // .w-1152-5 { width: 41.666%; }
   // .w-1152-4 { width: 33.333%; }
-  // .w-1152-3 { width: 25%; }
+  .w-1152-3 { width: 25%; }
   // .w-1152-2 { width: 16.666%; }
   // .w-1152-1 { width: 8.333%; }
-// }
+}
 
 // @media screen and (max-width: 1024px) {
   // .to-1024 { display: none !important; }
@@ -126,7 +126,7 @@
   // .w-962-1 { width: 8.333%; }
 // }
 
-// @media screen and (max-width: 864px) {
+@media screen and (max-width: 864px) {
   // .to-864 { display: none !important; }
   // .from-864, .table-to-864 { display: block !important; }
   // .inline-block-from-864 { display: inline-block !important; }
@@ -139,11 +139,11 @@
   // .w-864-7 { width: 58.333%; }
   // .w-864-6 { width: 50%; }
   // .w-864-5 { width: 41.666%; }
-  // .w-864-4 { width: 33.333%; }
+  .w-864-4 { width: 33.333%; }
   // .w-864-3 { width: 25%; }
   // .w-864-2 { width: 16.666%; }
   // .w-864-1 { width: 8.333%; }
-// }
+}
 
 // @media screen and (max-width: 768px) {
   // .to-768 { display: none !important; }
@@ -202,7 +202,7 @@
   // .w-640-1 { width: 8.333%; }
 // }
 
-// @media screen and (max-width: 582px) {
+@media screen and (max-width: 582px) {
   // .to-582 { display: none !important; }
   // .from-582, .table-to-582 { display: block !important; }
   // .inline-block-from-582 { display: inline-block !important; }
@@ -213,13 +213,13 @@
   // .w-582-9 { width: 75%; }
   // .w-582-8 { width: 66.666%; }
   // .w-582-7 { width: 58.333%; }
-  // .w-582-6 { width: 50%; }
+  .w-582-6 { width: 50%; }
   // .w-582-5 { width: 41.666%; }
   // .w-582-4 { width: 33.333%; }
   // .w-582-3 { width: 25%; }
   // .w-582-2 { width: 16.666%; }
   // .w-582-1 { width: 8.333%; }
-// }
+}
 
 // @media screen and (max-width: 480px) {
   // .to-480 { display: none !important; }
@@ -240,12 +240,12 @@
   // .w-480-1 { width: 8.333%; }
 // }
 
-// @media screen and (max-width: 424px) {
+@media screen and (max-width: 424px) {
   // .to-424 { display: none !important; }
   // .from-424, .table-to-424 { display: block !important; }
   // .inline-block-from-424 { display: inline-block !important; }
   // .inline-from-424 { display: inline !important; }
-  // .w-424-12 { width: 100%; }
+  .w-424-12 { width: 100%; }
   // .w-424-11 { width: 91.666%; }
   // .w-424-10 { width: 83.333%; }
   // .w-424-9 { width: 75%; }
@@ -257,4 +257,4 @@
   // .w-424-3 { width: 25%; }
   // .w-424-2 { width: 16.666%; }
   // .w-424-1 { width: 8.333%; }
-// }
+}

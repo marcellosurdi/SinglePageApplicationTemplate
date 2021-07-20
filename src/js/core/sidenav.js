@@ -8,22 +8,54 @@
  */
 
 import './../../css/core/sidenav.scss';
-
-document.getElementById("sidenav").querySelectorAll( 'a.has-children' ).forEach( item => {
-  item.addEventListener( 'click', f )
-});
+import { Overlay } from './overlay';
 
 
-function f( e ) {
-  this.nextElementSibling.classList.toggle('active');
-}
+export function Sidenav() {
+  let body = document.getElementById( 'body' );
+  let sidenav = document.getElementById( 'sidenav' );
 
-function openNav() {
-  document.getElementById("sidenav").style.width = "300px";
-  document.getElementById("body").classList.add('shift')
-}
+  document.getElementById( 'open-menu' ).addEventListener( 'click', openSidenav );
+  document.getElementById( 'close-menu' ).addEventListener( 'click', closeSidenav );
 
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
-  document.getElementById("body").classList.remove('shift')
+  sidenav.querySelectorAll( 'a.has-children' ).forEach( item => {
+    item.addEventListener( 'click', openSubMenu );
+
+    let sub_menu = item.nextElementSibling;
+    sub_menu.setAttribute( 'data-max-height', ( ( sub_menu.querySelectorAll( 'li' ).length * 50 ) + 'px') );
+    sub_menu.style.maxHeight = '0px';
+  });
+
+  sidenav.querySelectorAll( 'a:not(.has-children)' ).forEach( item => {
+    item.addEventListener( 'click', closeSidenav );
+  });
+
+  function openSubMenu( e ) {
+    e.preventDefault();
+
+    this.classList.toggle( 'active' );
+
+    let sub_menu = this.nextElementSibling;
+    if( sub_menu.style.maxHeight == '0px' ) {
+      sub_menu.style.maxHeight = sub_menu.getAttribute( 'data-max-height' );
+      sub_menu.style.opacity = '1';
+    } else {
+      sub_menu.style.maxHeight = '0px';
+      sub_menu.style.opacity = '0';
+    }
+  }
+
+  function openSidenav() {
+    Overlay( true );
+
+    sidenav.style.width = "275px";
+    body.classList.add('shift');
+  }
+
+  function closeSidenav() {
+    Overlay( false );
+
+    sidenav.style.width = "0";
+    body.classList.remove('shift');
+  }
 }

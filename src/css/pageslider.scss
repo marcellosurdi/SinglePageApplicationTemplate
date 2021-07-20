@@ -24,11 +24,12 @@
   font-size: 20px;
 }
 
-#header .menu {
+#header button#open-menu {
   position: absolute;
   top: 5px;
   right: 10px;
   background-color: #0984c6;
+  color: #fff;
 }
 
 #header a:active {

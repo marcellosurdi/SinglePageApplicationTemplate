@@ -45,9 +45,18 @@
   line-height: 24px;
 }
 
-.icon-language:before {
-  content: "\e906";
+.svg-icon {
+  display: inline-block;
+  background-image: url(../img/images.svg);
+  background-repeat: no-repeat;
 }
+
+.ita { background-position: 0 0; }
+.eng { background-position: -24px 0; }
+.fra { background-position: -48px 0; }
+.esp { background-position: -72px 0; }
+.deu { background-position: -96px 0; }
+
 .icon-user:before {
   content: "\e907";
 }

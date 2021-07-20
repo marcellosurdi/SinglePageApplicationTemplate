@@ -13,7 +13,7 @@ export const pages = {
   <div>
     <div class="content index">
       <ul class="list">
-        <li><a href="#page1?ciao=1&a=a&tutti=tutti"><strong>Page 1</strong></a></li>
+        <li><a href="#page1?var1=1"><strong>Icons</strong></a></li>
         <li><a href="#page2"><strong>Page 2</strong></a></li>
         <li><a href="#page3&anche=1&qui=1&funziona=funziona"><strong>Page 3</strong></a></li>
       </ul>
@@ -24,8 +24,21 @@ export const pages = {
   page1: `
   <div>
     <div class="content page1">
-      <h2>Page 1</h2>
-      <p>Curabitur tempor lacus iaculis pharetra tincidunt. Suspendisse vel orci vestibulum, <a href="#page4">page 4</a>.</p>
+      <h2>Icons</h2>
+      <p class="margin-medium">Available icons</p>
+      <div class="float-container">
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-user icon-medium text-medium"></span> .icon-user</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-phone icon-medium text-medium"></span> .icon-phone</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-faq icon-medium text-medium"></span> .icon-faq</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-info icon-medium text-medium"></span> .icon-info</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-marker icon-medium text-medium"></span> .icon-marker</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-padlock icon-medium text-medium"></span> .icon-padlock</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-arrow icon-medium text-medium"></span> .icon-arrow</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-close icon-medium text-medium"></span> .icon-close</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-unlink icon-medium text-medium"></span> .icon-unlink</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-menu icon-medium text-medium"></span> .icon-menu</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-checkmark icon-medium text-medium"></span> .icon-checkmark</div>
+      </div>
     </div>
   </div>
   `,

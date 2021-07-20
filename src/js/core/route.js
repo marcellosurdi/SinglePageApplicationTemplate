@@ -9,9 +9,11 @@ import { pages } from './../pages';
 import { PageSlider } from './pageslider';
 
 
-export function Route( container ) {
-  let self = this;
+export function Route() {
+  let container = document.getElementById( 'container' );
   let slider = new PageSlider( container );
+  let page = null;
+  let self = this;
   container.addEventListener( 'beforeAnimation', invokeMethod );
   container.addEventListener( 'afterAnimation', invokeMethod );
   window.addEventListener( 'hashchange', route );
@@ -40,8 +42,6 @@ export function Route( container ) {
   }
 
   function invokeMethod( e ) {
-    let page = self.page;
-
     let method = e.type + 'On' + page.hash.charAt(0).toUpperCase() + page.hash.slice(1);
     if( self[ method ] ) {
       self[ method ]( page.params );
@@ -50,10 +50,10 @@ export function Route( container ) {
 
   function route() {
     let html;
-    self.page = getPageDetails();
+    page = getPageDetails();
 
-    if( pages[ self.page.hash ] ) {
-      slider.slidePage( pages[ self.page.hash ] );
+    if( pages[ page.hash ] ) {
+      slider.slidePage( pages[ page.hash ] );
     } else {
       slider.slidePage( pages[ 404 ] );
     }
