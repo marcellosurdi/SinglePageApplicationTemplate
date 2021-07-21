@@ -12,10 +12,14 @@ export const pages = {
   index: `
   <div>
     <div class="content index">
+      <p data-i18n="short-template-description">
+        Using this template you have available <strong>core functionalities</strong> as page transitions, sidenav with multilevel menu,
+        toast messages, overlay and translations management.
+      </p>
       <ul class="list">
         <li><a href="#page1?var1=1"><strong>Icons</strong></a></li>
         <li><a href="#page2"><strong>Page 2</strong></a></li>
-        <li><a href="#page3&anche=1&qui=1&funziona=funziona"><strong>Page 3</strong></a></li>
+        <li><a href="#page3&var=2"><strong>Page 3</strong></a></li>
       </ul>
     </div>
   </div>
@@ -25,7 +29,7 @@ export const pages = {
   <div>
     <div class="content page1">
       <h2>Icons</h2>
-      <p class="margin-medium">Available icons</p>
+      <p class="margin-medium">Available icons and corresponding CSS classes.</p>
       <div class="float-container">
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-user icon-medium text-medium"></span> .icon-user</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-phone icon-medium text-medium"></span> .icon-phone</div>

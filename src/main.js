@@ -6,11 +6,16 @@
  */
 
 import './css/style.scss';
-import './css/pageslider.scss';
-import './js/custom';
-import { Sidenav } from './js/core/sidenav';
+import './js/core/sidenav';
 import { Route } from './js/core/route';
 
 
-Sidenav();
+Route.prototype = {
+  constructor: Route,
+
+  beforeAnimationOnPage1: function( params ) {
+    console.log( params );
+  },
+}
+
 new Route();

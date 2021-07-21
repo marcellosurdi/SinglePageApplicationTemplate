@@ -11,7 +11,7 @@ import './../../css/core/sidenav.scss';
 import { Overlay } from './overlay';
 
 
-export function Sidenav() {
+function Sidenav() {
   let body = document.getElementById( 'body' );
   let sidenav = document.getElementById( 'sidenav' );
 
@@ -46,7 +46,11 @@ export function Sidenav() {
   }
 
   function openSidenav() {
-    Overlay( true );
+    const overlay = Overlay( true );
+    overlay.addEventListener( 'click', function close( e ) {
+      closeSidenav();
+      e.target.removeEventListener( 'click', close );
+    } )
 
     sidenav.style.width = "275px";
     body.classList.add('shift');
@@ -59,3 +63,5 @@ export function Sidenav() {
     body.classList.remove('shift');
   }
 }
+
+Sidenav();

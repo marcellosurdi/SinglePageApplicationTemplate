@@ -15,16 +15,14 @@
         <li class="xlight-grey-background"><a href="#"><span class="xxlight-grey-background icon-padlock icon-small text-small"></span> Login</a></li>
         <li class="xlight-grey-background"><a href="#"><span class="xxlight-grey-background icon-user icon-small text-small"></span> User</a></li>
         <li class="xlight-grey-background">
-          <a href="#" class="has-children btn">
-            <span class="xxlight-grey-background svg-icon ita icon-small text-small"></span>
-            <span>English</span>
-            <button type="button"><span class="xlight-grey-background icon-arrow icon-small text-small"></span></button>
+          <a href="#" id="lang" class="has-children btn">
+            <span class="xxlight-grey-background svg-icon en icon-small text-small"></span>
+            <span class="current-lang">English</span>
+            <span class="arrow"><span class="xlight-grey-background icon-arrow icon-small text-small"></span></span>
           </a>
-          <ul class="sub-menu">
-            <li><a href="#">Italiano</a></li>
-            <li><a href="#">English</a></li>
-            <li><a href="#">Français</a></li>
-            <li><a href="#">Español</a></li>
+          <ul id="langs" class="sub-menu">
+            <li><a href="javascript:void(0);" data-lang="en">English <span class="xlight-grey-background icon-checkmark icon-small text-small"></span></a></li>
+            <li><a href="javascript:void(0);" data-lang="it">Italiano</a></li>
           </ul>
         </li>
         <li><a href="#"><span class="xlight-grey-background icon-phone icon-small text-small"></span> Contacts</a></li>
@@ -32,13 +30,13 @@
           <a href="#" class="has-children">
             <span class="xlight-grey-background icon-marker icon-small text-small"></span>
             Where we are
-            <button type="button"><span class="xxlight-grey-background icon-arrow icon-small text-small"></span></button>
+            <span class="arrow"><span class="xxlight-grey-background icon-arrow icon-small text-small"></span></span>
           </a>
           <ul class="sub-menu">
             <li>
               <a href="#" class="has-children">
                 Sub-menu 1
-                <button type="button"><span class="xxlight-grey-background icon-arrow icon-small text-small"></span></button>
+                <span class="arrow"><span class="xxlight-grey-background icon-arrow icon-small text-small"></span></span>
               </a>
               <ul class="sub-menu">
                 <li><a href="#page2">Page 2</a></li>

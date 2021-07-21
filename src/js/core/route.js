@@ -5,17 +5,21 @@
  * Route
  */
 
+import './../../css/core/pageslider.scss';
 import { pages } from './../pages';
 import { PageSlider } from './pageslider';
+import { I18n } from './i18n';
 
 
 export function Route() {
-  let container = document.getElementById( 'container' );
-  let slider = new PageSlider( container );
   let page = null;
-  let self = this;
-  container.addEventListener( 'beforeAnimation', invokeMethod );
-  container.addEventListener( 'afterAnimation', invokeMethod );
+  const self = this;
+  const container = document.getElementById( 'container' );
+  const page_slider = new PageSlider( container );
+  const i18n = new I18n();
+  container.addEventListener( 'beforeAnimation', searchOnPrototype );
+  container.addEventListener( 'beforeAnimation', i18n.setLanguage );
+  container.addEventListener( 'afterAnimation', searchOnPrototype );
   window.addEventListener( 'hashchange', route );
   route();
 
@@ -25,15 +29,15 @@ export function Route() {
     if( !query_string ) {
       query_string = 'index';
     }
-    let array = query_string.replace( '?', '&' ).split( '&' );
-    let page_name = array[0];
+    let arr = query_string.replace( '?', '&' ).split( '&' );
+    let page_name = arr[0];
 
-    array.splice( 0, 1 );
-    let l = array.length;
+    arr.splice( 0, 1 );
+    let l = arr.length;
     let params = {};
     if( l > 0 ) {
       for( let i = 0; i < l; i++ ) {
-        let param = array[ i ].split( '=' );
+        let param = arr[ i ].split( '=' );
         params[ param[0] ] = param[1];
       }
     }
@@ -41,7 +45,7 @@ export function Route() {
     return { hash: page_name, params: params };
   }
 
-  function invokeMethod( e ) {
+  function searchOnPrototype( e ) {
     let method = e.type + 'On' + page.hash.charAt(0).toUpperCase() + page.hash.slice(1);
     if( self[ method ] ) {
       self[ method ]( page.params );
@@ -53,9 +57,9 @@ export function Route() {
     page = getPageDetails();
 
     if( pages[ page.hash ] ) {
-      slider.slidePage( pages[ page.hash ] );
+      page_slider.slidePage( pages[ page.hash ] );
     } else {
-      slider.slidePage( pages[ 404 ] );
+      page_slider.slidePage( pages[ 404 ] );
     }
   }
 }

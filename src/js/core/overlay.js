@@ -1,11 +1,9 @@
 /**
- * @module js/components/overlay
+ * @module js/core/overlay
  * @author Marcello Surdi
- * @version 1.0.0
  *
  * @desc
  * Contiene il componente **Overlay**.
- * *Un overlay è un elemento semitrasparente che oscura la pagina tranne la parte che si intende evidenziare.*
  */
 
  /**
@@ -18,7 +16,7 @@
   * @returns {HTMLDivElement|undefined} Restituisce l'overlay contestualmente all'apertura o undefined in chiusura
   *
   * @example
-  * Overlay( true );
+  * const overlay = Overlay( true );
   */
 export function Overlay( action = true, spinner = false, zIndex = 10 ) {
   let overlay = document.getElementById( 'overlay' );
