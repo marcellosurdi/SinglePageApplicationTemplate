@@ -1,7 +1,7 @@
 {
   "name": "single-page-application-template",
   "description": "Single page application (SPA) is a dependency-free template using predefined CSS styles, page transitions, sidenav with multilevel menu, icons, toast messages, overlay and translations management",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "keywords": [],
   "main": "main.js",
   "repository": {},
@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js --open chrome",
-    "build": "webpack --config config/webpack.prod.js --env BUILD --output-public-path /spa/",
+    "build": "webpack --config config/webpack.prod.js --env BUILD --output-public-path /demo/single-page-application-template/",
     "jsdoc": "jsdoc -r src -d docs -R README.md -c jsdoc.json"
   },
   "devDependencies": {

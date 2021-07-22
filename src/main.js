@@ -17,19 +17,19 @@ Route.prototype = {
 
   beforeAnimationOnNotifications: function() {
     document.getElementById( 'notification1' ).addEventListener( 'click', () => {
-      Notification( 'alert', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet. Praesent aliquam nisi ac rhoncus fringilla. Nulla sit amet ultrices nisi, et interdum felis. Etiam rutrum sit amet nulla vitae auctor.' )
+      Notification( 'alert', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet.' )
     } );
 
     document.getElementById( 'notification2' ).addEventListener( 'click', () => {
-      Notification( 'success', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet. Praesent aliquam nisi ac rhoncus fringilla. Nulla sit amet ultrices nisi, et interdum felis. Etiam rutrum sit amet nulla vitae auctor.' )
+      Notification( 'success', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet.' )
     } );
 
     document.getElementById( 'notification3' ).addEventListener( 'click', () => {
-      Notification( 'warning', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet. Praesent aliquam nisi ac rhoncus fringilla. Nulla sit amet ultrices nisi, et interdum felis. Etiam rutrum sit amet nulla vitae auctor.' )
+      Notification( 'warning', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet.' )
     } );
 
     document.getElementById( 'notification4' ).addEventListener( 'click', () => {
-      Notification( 'notice', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet. Praesent aliquam nisi ac rhoncus fringilla. Nulla sit amet ultrices nisi, et interdum felis. Etiam rutrum sit amet nulla vitae auctor.', 0, () => { alert( 'Confirm action' ); } )
+      Notification( 'notice', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet.', 0, () => { alert( 'Confirm action' ); } )
     } );
   },
 
