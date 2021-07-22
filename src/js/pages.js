@@ -1,10 +1,10 @@
 export const pages = {
-  404: `
+  '404': `
   <div>
     <div class="content 404 align-center">
       <span class="margin-top-big radius-circle xlight-grey-background padding-big icon-unlink text-5xl text-faded-light"></span>
-      <p class="margin-medium text-xxl text-faded-light">Sorry, the page wasn't found</p>
-      <a href="#" class="btn display-inline-block radius-5 light-grey-background padding-medium">Back to home</a>
+      <p class="margin-medium text-xxl text-faded-light" data-i18n="short-404-description"></p>
+      <a href="#" class="btn display-inline-block radius-5 light-grey-background padding-medium" data-i18n="back-to-home"></a>
     </div>
   </div>
   `,
@@ -12,24 +12,22 @@ export const pages = {
   index: `
   <div>
     <div class="content index">
-      <p data-i18n="short-template-description">
-        Using this template you have available <strong>core functionalities</strong> as page transitions, sidenav with multilevel menu,
-        toast messages, overlay and translations management.
-      </p>
-      <ul class="list">
-        <li><a href="#page1?var1=1"><strong>Icons</strong></a></li>
-        <li><a href="#page2"><strong>Page 2</strong></a></li>
-        <li><a href="#page3&var=2"><strong>Page 3</strong></a></li>
+      <p class="container-max-width" data-i18n="short-template-description"></p>
+      <ul class="list-view">
+        <li><a href="#icons"><strong data-i18n="icons"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#overlay"><strong>Overlay</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#query-string?var1=1&var2=2&var3=3"><strong>Query string</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#notifications"><strong data-i18n="notifications"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
       </ul>
     </div>
   </div>
   `,
 
-  page1: `
+  icons: `
   <div>
-    <div class="content page1">
-      <h2>Icons</h2>
-      <p class="margin-medium">Available icons and corresponding CSS classes.</p>
+    <div class="content icons">
+      <h2 data-i18n="icons"></h2>
+      <p class="margin-medium" data-i18n="short-icons-description"></p>
       <div class="float-container">
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-user icon-medium text-medium"></span> .icon-user</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-phone icon-medium text-medium"></span> .icon-phone</div>
@@ -47,29 +45,42 @@ export const pages = {
   </div>
   `,
 
-  page2: `
+  overlay: `
   <div>
-    <div class="content page2">
-      <h2>Page 2</h2>
-      <p>Nulla egestas lectus vel laoreet porttitor. Aliquam feugiat bibendum sollicitudin, <a href="#">home</a>.</p>
+    <div class="content overlay">
+      <h2>Overlay</h2>
+      <p data-i18n="short-overlay-description"></p>
+      <p>
+        <a href="javascript:void(0);" id="overlay1" class="btn display-inline-block margin-small radius-5 light-grey-background padding-medium" data-i18n="overlay-btn-1"></a>
+        <a href="javascript:void(0);" id="overlay2" class="btn display-inline-block margin-small radius-5 light-grey-background padding-medium" data-i18n="overlay-btn-2"></a>
+        <a href="javascript:void(0);" id="overlay3" class="btn display-inline-block margin-small radius-5 light-grey-background padding-medium" data-i18n="overlay-btn-3"></a>
+      </p>
     </div>
   </div>
   `,
 
-  page3: `
+  'query-string': `
   <div>
-    <div class="content page3">
-      <h2>Page 3</h2>
-      <p>Praesent eu massa feugiat, tincidunt lectus consectetur, sodales tortor. Cras sit amet ullamcorper sapien, <a href="#">home</a>.</p>
+    <div class="content query-string">
+      <h2>Query string</h2>
+      <p class="margin-medium" data-i18n="short-query-string-description"></p>
+      <h3 data-i18n="query-string-title"></h3>
+      <div id="show-vars" class="xlight-grey-background padding-medium"></div>
     </div>
   </div>
   `,
 
-  page4: `
+  notifications: `
   <div>
     <div class="content page4">
-      <h2>Page 4</h2>
-      <p>Duis non erat eget lorem dapibus consectetur euismod non lorem. Vestibulum bibendum vehicula pretium. Cras sit amet ullamcorper sapien, <a href="#">home</a>.</p>
+      <h2 data-i18n="notifications"></h2>
+      <p data-i18n="short-notifications-description"></p>
+      <p>
+        <a href="javascript:void(0);" id="notification1" class="btn display-inline-block margin-small radius-5 alert-background padding-medium" data-i18n="notification-btn-1"></a>
+        <a href="javascript:void(0);" id="notification2" class="btn display-inline-block margin-small radius-5 success-background padding-medium" data-i18n="notification-btn-2"></a>
+        <a href="javascript:void(0);" id="notification3" class="btn display-inline-block margin-small radius-5 warning-background padding-medium" data-i18n="notification-btn-3"></a>
+        <a href="javascript:void(0);" id="notification4" class="btn display-inline-block margin-small radius-5 notice-background padding-medium" data-i18n="notification-btn-4"></a>
+      </p>
     </div>
   </div>
   `,

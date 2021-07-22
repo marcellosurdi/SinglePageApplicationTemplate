@@ -46,7 +46,7 @@ function Sidenav() {
   }
 
   function openSidenav() {
-    const overlay = Overlay( true );
+    const overlay = Overlay();
     overlay.addEventListener( 'click', function close( e ) {
       closeSidenav();
       e.target.removeEventListener( 'click', close );

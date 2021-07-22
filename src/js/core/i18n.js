@@ -22,9 +22,14 @@ export function I18n() {
     item.addEventListener( 'click', pickLanguage );
   });
 
-  const arr = ( window.navigator.userLanguage || window.navigator.language ).split( '-' );
-  if( langs.indexOf( arr[0] ) != -1 ) {
-    lang = arr[0];
+  if( !localStorage.getItem( 'lang' ) ) {
+    const arr = ( window.navigator.userLanguage || window.navigator.language ).split( '-' );
+    if( langs.indexOf( arr[0] ) != -1 ) {
+      lang = arr[0];
+    }
+    localStorage.setItem( 'lang', lang );
+  } else {
+    lang = localStorage.getItem( 'lang' );
   }
 
   showLanguage();
@@ -32,7 +37,10 @@ export function I18n() {
 
   function pickLanguage( e ) {
     lang = e.target.getAttribute( 'data-lang' );
+    localStorage.setItem( 'lang', lang );
+
     showLanguage();
+
     self.setLanguage();
   }
 
@@ -43,13 +51,25 @@ export function I18n() {
     span_icon.classList.add( lang );
 
     langs_el.querySelectorAll( 'a' ).forEach( ( item, i ) => {
+      const span = item.querySelector( 'span' );
+
       if( item.getAttribute( 'data-lang' ) == lang ) {
         lang_el.querySelector( 'span.current-lang' ).textContent = item.textContent;
-        item.insertAdjacentHTML( 'beforeend', '<span class="xlight-grey-background icon-checkmark icon-small text-small"></span>' );
+        if( !span ) {
+          item.insertAdjacentHTML( 'beforeend', '<span class="xlight-grey-background icon-checkmark icon-small text-small"></span>' );
+        }
       } else {
-        item.removeChild( item.querySelector( 'span' ) );
+        if( span ) {
+          item.removeChild( span );
+        }
       }
     });
+  }
+
+  this.getTranslation = function( str ) {
+    if( l10n[ lang ][ str ] ) {
+      return l10n[ lang ][ str ];
+    }
   }
 
   this.setLanguage = function() {

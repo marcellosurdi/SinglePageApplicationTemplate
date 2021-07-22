@@ -1,7 +1,6 @@
 $container_max_width: 1366px;
 
 $text_color: #444;
-$link_color: #0d3aaf;
 $text_faded_dark: #888;
 $text_faded_light: #bbb;
 $text_small: 14px;
@@ -47,11 +46,11 @@ $margin_xxl_size: 50px;
 
 
 @mixin font-a {
-  font-family: 'Poppins', arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 
 @mixin font-b {
-  font-family: 'Playfair Display', georgia, serif;
+  font-family: georgia, serif;
 }
 
 

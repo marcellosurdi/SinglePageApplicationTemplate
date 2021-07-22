@@ -46,7 +46,7 @@ export function Route() {
   }
 
   function searchOnPrototype( e ) {
-    let method = e.type + 'On' + page.hash.charAt(0).toUpperCase() + page.hash.slice(1);
+    let method = e.type + 'On' + page.hash.charAt(0).toUpperCase() + page.hash.replace( '-', '' ).slice(1);
     if( self[ method ] ) {
       self[ method ]( page.params );
     }

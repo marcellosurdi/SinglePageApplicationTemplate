@@ -1,7 +1,7 @@
 # Single page application template
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/marcellosurdi/SinglePageApplicationTemplate)
 
-Single page application (SPA) dependency-free template using page transitions, sidenav, toast messages and much more. Inspired by Christophe Coenraets's [PageSlider](https://github.com/ccoenraets/PageSlider).
+Single page application (SPA) is a dependency-free template using predefined CSS styles, page transitions, sidenav with multilevel menu, icons, toast messages, overlay and translations management. Page transitions are inspired by Christophe Coenraets's [PageSlider](https://github.com/ccoenraets/PageSlider).
 
 ## Usage
 Make sure that you have [Node.js](http://nodejs.org/) installed, then:

@@ -1,4 +1,56 @@
 a.btn { text-decoration: none; }
 .btn span { vertical-align: middle }
+
+
 .radius-5 { border-radius: 5px; }
 .radius-circle { border-radius: 50%; }
+
+// LIST VIEW
+.list-view li {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-view li > a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a span.arrow {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 42px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+
+a.rotate-arrow span.arrow span {
+  transform: rotate(90deg);
+  transition: transform .25s;
+}
+
+a.rotate-arrow.active span.arrow span {
+  transform: rotate(-90deg);
+}
+
+// LAZY LOADING
+.lazy { background-color: $light_grey_color; }
+
+.preload:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 5px solid $dark_grey_color;
+  border-color: $dark_grey_color transparent $dark_grey_color transparent;
+  border-radius: 50%;
+  margin: -23px 0 0 -23px;
+  width: 46px;
+  height: 46px;
+  @include rotate-animation( 1s, ease-out );
+}
+
+.complete { animation: fadein .2s linear; }

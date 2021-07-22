@@ -47,21 +47,3 @@ ul.sub-menu {
   padding: 10px;
   text-decoration: none;
 }
-
-a.has-children span.arrow {
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 42px;
-  border-left: 1px solid #ccc;
-  text-align: center;
-}
-
-a.has-children span.arrow span {
-  transform: rotate(90deg);
-  transition: transform .25s;
-}
-
-a.has-children.active span.arrow span {
-  transform: rotate(-90deg);
-}

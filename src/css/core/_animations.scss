@@ -1,0 +1,44 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    @include transform( rotate(0deg) );
+  }
+  100% {
+    @include transform( rotate(360deg) );
+  }
+}
+
+@keyframes slidetop {
+  0% {
+    @include transform( translateY(0) );
+  }
+  100% {
+    @include transform( translateY(-10px) );
+  }
+}
+
+@keyframes slidebottom {
+  0% {
+    @include transform( translateY(-10px) );
+  }
+  100% {
+    @include transform( translateY(0) );
+  }
+}
