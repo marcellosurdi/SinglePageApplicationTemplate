@@ -23,6 +23,26 @@ export function Route() {
   window.addEventListener( 'hashchange', route );
   route();
 
+  // document.querySelectorAll( '[data-state]' ).forEach( (a, i) => {
+  //   a.addEventListener( 'click', prova );
+  // });
+  //
+  // history.replaceState( { url: 'index' }, null, 'it/index.php');
+  //
+  // function prova( e ) {
+  //   e.preventDefault();
+  //   const url = this.getAttribute( 'data-state' ) + '.php';
+  //   history.pushState( { var1: 'ciao' }, null, url);
+  //   page_slider.slidePage( pages[this.getAttribute( 'data-state' )] );
+  // }
+  //
+  // window.addEventListener( 'popstate', function( e ) {
+  //   if( e.state ) {
+  //     page_slider.slidePage( pages[ e.state.url ] );
+  //   }
+  // });
+
+
 
   function getPageDetails() {
     let query_string = window.location.hash.slice( 1 );
@@ -53,7 +73,6 @@ export function Route() {
   }
 
   function route() {
-    let html;
     page = getPageDetails();
 
     if( pages[ page.hash ] ) {

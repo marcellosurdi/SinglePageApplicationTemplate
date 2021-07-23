@@ -14,7 +14,7 @@ export const pages = {
     <div class="content index">
       <p class="container-max-width" data-i18n="short-template-description"></p>
       <ul class="list-view">
-        <li><a href="#icons"><strong data-i18n="icons"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="javascript:void(0);" data-state="icons"><strong data-i18n="icons"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#overlay"><strong>Overlay</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#query-string?var1=1&var2=2&var3=3"><strong>Query string</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#notifications"><strong data-i18n="notifications"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>

@@ -56,7 +56,7 @@ export function I18n() {
       if( item.getAttribute( 'data-lang' ) == lang ) {
         lang_el.querySelector( 'span.current-lang' ).textContent = item.textContent;
         if( !span ) {
-          item.insertAdjacentHTML( 'beforeend', '<span class="xlight-grey-background icon-checkmark icon-small text-small"></span>' );
+          item.insertAdjacentHTML( 'beforeend', ' <span class="xlight-grey-background icon-checkmark icon-small text-small"></span>' );
         }
       } else {
         if( span ) {
