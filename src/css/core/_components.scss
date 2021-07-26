@@ -1,4 +1,4 @@
-// OVERLAY
+// overlay.js
 div#overlay {
   position: fixed;
   display: none;
@@ -12,7 +12,7 @@ div#overlay {
   z-index: 10;
 }
 
-// NOTIFICATION
+// notification.js
 div#notification {
   position: fixed;
   top: -250px;
@@ -23,7 +23,7 @@ div#notification {
   min-height: 45px;
   transition: all .25s ease-out;
 }
-div#notification.show { transform: translate3d(0,250px,0); }
+div#notification.show { @include transform(translate3d(0,250px,0)); }
 div#notification div.container-max-width { padding-right: 40px; }
 div#notification a.icon-close { position: absolute; top: 10px; right: 10px; }
 .success-btn-background, .success-background a { background-color: $dark_success_color; text-decoration: none; color: $white_color; }

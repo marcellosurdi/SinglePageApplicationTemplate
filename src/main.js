@@ -15,6 +15,13 @@ import { Notification } from './js/core/notification';
 Route.prototype = {
   constructor: Route,
 
+  beforeAnimationOnForms: function() {
+    document.getElementById( 'form-example' ).addEventListener( 'submit', ( e ) => {
+      e.preventDefault();
+      console.log( 'Form submit!' );
+    } );
+  },
+
   beforeAnimationOnNotifications: function() {
     document.getElementById( 'notification1' ).addEventListener( 'click', () => {
       Notification( 'alert', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra efficitur dignissim. Curabitur eu dapibus mauris. Donec bibendum elit risus, eu vulputate nulla efficitur sit amet.' )

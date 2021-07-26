@@ -1,34 +1,34 @@
 export const pages = {
-  '404': `
+  404: `
   <div>
     <div class="content 404 align-center">
       <span class="margin-top-big radius-circle xlight-grey-background padding-big icon-unlink text-5xl text-faded-light"></span>
       <p class="margin-medium text-xxl text-faded-light" data-i18n="short-404-description"></p>
-      <a href="#" class="btn display-inline-block radius-5 light-grey-background padding-medium" data-i18n="back-to-home"></a>
+      <a href="#" class="btn display-inline-block radius-5 light-btn-background padding-medium" data-i18n="back-to-home"></a>
     </div>
   </div>
   `,
 
-  'css-classes': `
+  backgrounds: `
   <div>
-    <div class="content css-classes">
-      <h2>Classi CSS</h2>
-      <p class="margin-medium">Usa le classi per assegnare sfondi e posizionamenti</p>
+    <div class="content backgrounds">
+      <h2 data-i18n="backgrounds"></h2>
+      <p class="margin-medium" data-i18n="short-backgrounds-description"></p>
       <div class="float-container">
-        <div class="float-item xxdark-grey-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.xxdark-grey-background</div>
-        <div class="float-item xdark-grey-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.xdark-grey-background</div>
-        <div class="float-item dark-grey-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.dark-grey-background</div>
-        <div class="float-item light-grey-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.light-grey-background</div>
-        <div class="float-item xlight-grey-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.xlight-grey-background</div>
-        <div class="float-item xxlight-grey-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.xxlight-grey-background</div>
-        <div class="float-item dark-a-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.dark-a-background</div>
-        <div class="float-item light-a-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.light-a-background</div>
-        <div class="float-item dark-btn-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.dark-btn-background</div>
-        <div class="float-item light-btn-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.light-btn-background</div>
-        <div class="float-item success-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.success-background</div>
-        <div class="float-item alert-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.alert-background</div>
-        <div class="float-item warning-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.warning-background</div>
-        <div class="float-item notice-background padding-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12">.notice-background</div>
+      <div class="float-item dark-a-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-a-background</div>
+      <div class="float-item light-a-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-a-background</div>
+      <div class="float-item dark-btn-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-btn-background</div>
+      <div class="float-item light-btn-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-btn-background</div>
+        <div class="float-item xxdark-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.xxdark-grey-background</div>
+        <div class="float-item xdark-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.xdark-grey-background</div>
+        <div class="float-item dark-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-grey-background</div>
+        <div class="float-item light-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-grey-background</div>
+        <div class="float-item xlight-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.xlight-grey-background</div>
+        <div class="float-item xxlight-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.xxlight-grey-background</div>
+        <div class="float-item success-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.success-background</div>
+        <div class="float-item alert-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.alert-background</div>
+        <div class="float-item warning-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.warning-background</div>
+        <div class="float-item notice-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.notice-background</div>
       </div>
     </div>
   </div>
@@ -56,16 +56,84 @@ export const pages = {
   </div>
   `,
 
+  forms: `
+  <div>
+    <div class="content forms">
+      <h2 data-i18n="forms">Form</h2>
+      <form id="form-example">
+        <fieldset>
+          <legend>Legend1</legend>
+          <label for="text1">Label 1</label>
+          <input id="text1" type="text" placeholder="#text1">
+          <div class="float-container form-section">
+            <div class="float-item w-6 padding-right-medium">
+              <label for="text2">Label 2</label>
+              <input id="text2" type="text" placeholder="#text2">
+            </div>
+            <div class="float-item w-6 error">
+              <label for="text3">Label 3</label>
+              <input id="text3" type="text" placeholder="#text3">
+            </div>
+          </div>
+
+          <div class="form-section">
+            <label for="select1">Label 4</label>
+            <select>
+              <option>Choose</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <div class="float-item form-section w-12">
+            <label class="checkboxradio">
+              Label 5
+              <input type="checkbox" id="checkbox1" checked>
+              <span class="checkbox"></span>
+            </label>
+          </div>
+
+          <div class="float-item form-section w-12">
+            <div class="float-item w-6">
+              <label class="checkboxradio">
+                Label 6
+                <input type="radio" id="radio1" name="radio-example" checked>
+                <span class="radio"></span>
+              </label>
+            </div>
+            <div class="float-item w-6">
+              <label class="checkboxradio">
+                Label 7
+                <input type="radio" id="radio2" name="radio-example">
+                <span class="radio"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="float-item form-section w-12">
+            <button type="submit" class="btn display-block w-12 radius-5 light-btn-background padding-medium text-big uppercase">
+              <span class="white-background icon-checkmark icon-small text-small"></span>
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  `,
+
   index: `
   <div>
     <div class="content index">
-      <p class="container-max-width" data-i18n="short-template-description"></p>
+      <p class="max-width-768" data-i18n="short-template-description"></p>
       <ul class="list-view">
-        <li><a href="#css-classes"><strong data-i18n="css-classes"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#backgrounds"><strong data-i18n="backgrounds"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#forms"><strong data-i18n="forms"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#icons"><strong data-i18n="icons"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#notifications"><strong data-i18n="notifications"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#overlay"><strong>Overlay</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#query-string?var1=1&var2=2&var3=3"><strong>Query string</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
-        <li><a href="#notifications"><strong data-i18n="notifications"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
       </ul>
     </div>
   </div>

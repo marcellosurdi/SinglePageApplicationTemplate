@@ -1,11 +1,10 @@
 a.btn { text-decoration: none; }
 .btn span { vertical-align: middle }
 
-
 .radius-5 { border-radius: 5px; }
 .radius-circle { border-radius: 50%; }
 
-// LIST VIEW
+// .list-view
 .list-view li {
   position: relative;
   border-bottom: 1px solid #ddd;
@@ -28,15 +27,15 @@ a span.arrow {
 }
 
 a.rotate-arrow span.arrow span {
-  transform: rotate(90deg);
+  @include transform( rotate(90deg) );
   transition: transform .25s;
 }
 
 a.rotate-arrow.active span.arrow span {
-  transform: rotate(-90deg);
+  @include transform( rotate(-90deg) );
 }
 
-// LAZY LOADING
+// Lazy loading
 .lazy { background-color: $light_grey_color; }
 
 .preload:after {

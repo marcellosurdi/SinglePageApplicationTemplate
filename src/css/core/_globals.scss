@@ -1,4 +1,4 @@
-$container_max_width: 1366px;
+$container_max_width: 1920px;
 
 $text_color: #444;
 $text_faded_dark: #888;
@@ -21,8 +21,8 @@ $dark_grey_color: #bbb;
 $light_grey_color: #ddd;
 $xlight_grey_color: #eee;
 $xxlight_grey_color: #f9f9f9;
-$dark_a_color: #041133;
-$light_a_color: #28364b;
+$dark_a_color: #0984c6;
+$light_a_color: #109adc;
 $light_btn_color: #20c0b3;
 $dark_btn_color: #19b0a4;
 $active_color: #006cff;
@@ -72,7 +72,6 @@ $margin_xxl_size: 50px;
   transform: $property;
 }
 
-// La proprietà user-select indica se il testo di un elemento può essere selezionato
 @mixin user-select {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -80,7 +79,6 @@ $margin_xxl_size: 50px;
   user-select: none;
 }
 
-// La proprietà appearance viene utilizzata per visualizzare un elemento con lo stile nativo della piattaforma corrente
 @mixin appearance {
   -webkit-appearance: none;
   -moz-appearance: none;

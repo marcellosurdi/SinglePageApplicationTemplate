@@ -14,7 +14,7 @@
 // .text-weight-normal { font-weight: normal; }
 // .small-caps { text-transform: lowercase; font-variant: small-caps; }
 // .capitalize { text-transform: capitalize; }
-// .uppercase { text-transform: uppercase; }
+.uppercase { text-transform: uppercase; }
 
 // .text-spaced { letter-spacing: 1px; }
 // .text-line-small { line-height: 1.1; }
@@ -43,16 +43,16 @@
   // .text-1536-5xl { font-size: $text_5xl; }
 // }
 
-// @media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
   // .text-1366-small { font-size: $text_small; }
-  // .text-1366-medium { font-size: $text_medium; }
+  .text-1366-medium { font-size: $text_medium; }
   // .text-1366-big { font-size: $text_big; }
   // .text-1366-xl { font-size: $text_xl; }
   // .text-1366-xxl { font-size: $text_xxl; }
   // .text-1366-3xl { font-size: $text_3xl; }
   // .text-1366-4xl { font-size: $text_4xl; }
   // .text-1366-5xl { font-size: $text_5xl; }
-// }
+}
 
 // @media screen and (max-width: 1152px) {
   // .text-1152-small { font-size: $text_small; }
@@ -153,13 +153,13 @@
   // .text-480-5xl { font-size: $text_5xl; }
 // }
 
-// @media screen and (max-width: 424px) {
+@media screen and (max-width: 424px) {
   // .text-424-small { font-size: $text_small; }
   // .text-424-medium { font-size: $text_medium; }
-  // .text-424-big { font-size: $text_big; }
+  .text-424-big { font-size: $text_big; }
   // .text-424-xl { font-size: $text_xl; }
   // .text-424-xxl { font-size: $text_xxl; }
   // .text-424-3xl { font-size: $text_3xl; }
   // .text-424-4xl { font-size: $text_4xl; }
   // .text-424-5xl { font-size: $text_5xl; }
-// }
+}

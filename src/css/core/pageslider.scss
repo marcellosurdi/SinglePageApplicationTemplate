@@ -12,10 +12,10 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  border-bottom: 1px solid #0E5895;;
-  background: #109adc;
+  border-bottom: 1px solid $dark_a_color;
+  background: $light_a_color;
   height: 59px;
-  color: #fff;
+  color: $white_color;
   z-index: 2;
 }
 
@@ -30,13 +30,8 @@
   position: absolute;
   top: 14px;
   right: 10px;
-  background-color: #0984c6;
-  color: #fff;
-}
-
-#header a:active {
-  background-color: #0876b1;
-  color: #fff;
+  background-color: $dark_a_color;
+  color: $white_color;
 }
 
 .page {
@@ -45,8 +40,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translate3d(0, 0, 1px);
-  transform: translate3d(0, 0, 0);
+  @include transform(translate3d(0, 0, 0));
   overflow: auto;
 }
 
@@ -56,21 +50,17 @@
 }
 
 .page.left {
-  -webkit-transform: translate3d(-100%, 0, 1px);
-  transform: translate3d(-100%, 0, 0);
+  @include transform(translate3d(-100%, 0, 0));
 }
 
 .page.center {
-  -webkit-transform: translate3d(0, 0, 1px);
-  transform: translate3d(0, 0, 0);
+  @include transform(translate3d(0, 0, 0));
 }
 
 .page.right {
-  -webkit-transform: translate3d(100%, 0, 1px);
-  transform: translate3d(100%, 0, 0);
+  @include transform(translate3d(100%, 0, 0));
 }
 
 .page.transition {
-  -webkit-transition-duration: .25s;
   transition-duration: .25s;
 }
