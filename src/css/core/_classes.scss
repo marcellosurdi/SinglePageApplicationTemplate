@@ -4,6 +4,26 @@ a.btn { text-decoration: none; }
 .radius-5 { border-radius: 5px; }
 .radius-circle { border-radius: 50%; }
 
+// Lazy loading
+.lazy { background-color: $xlight_grey_color; }
+
+.preload:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 5px solid $dark_grey_color;
+  border-color: $dark_grey_color transparent $dark_grey_color transparent;
+  border-radius: 50%;
+  margin: -23px 0 0 -23px;
+  width: 46px;
+  height: 46px;
+  @include rotate-animation( 1s, ease-out );
+}
+
+.complete { animation: fadein 1s linear; }
+
+
 // .list-view
 .list-view li {
   position: relative;
@@ -35,21 +55,44 @@ a.rotate-arrow.active span.arrow span {
   @include transform( rotate(-90deg) );
 }
 
-// Lazy loading
-.lazy { background-color: $light_grey_color; }
 
-.preload:after {
-  content: " ";
+// a.right-arrow-btn, a.left-arrow-btn
+a.right-arrow-btn, a.left-arrow-btn {
+  height: 32px;
+  line-height: 32px;
+  text-decoration: none;
+  color: $white_color;
+}
+a.right-arrow-btn::after, a.left-arrow-btn::before {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 5px solid $dark_grey_color;
-  border-color: $dark_grey_color transparent $dark_grey_color transparent;
-  border-radius: 50%;
-  margin: -23px 0 0 -23px;
-  width: 46px;
-  height: 46px;
-  @include rotate-animation( 1s, ease-out );
+  border: solid;
 }
 
-.complete { animation: fadein .2s linear; }
+a.right-arrow-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+a.right-arrow-btn::after {
+  border-width: 16px 10px 16px 10px;
+  border-color: transparent transparent transparent #19b0a4;
+}
+a.right-arrow-btn:hover:after {
+  border-color: transparent transparent transparent $light_btn_color;
+}
+a.left-arrow-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+a.left-arrow-btn::before {
+  left: -20px;
+  border-width: 16px 10px 16px 10px;
+  border-color: transparent #19b0a4 transparent transparent;
+}
+a.left-arrow-btn:hover::before {
+  border-color: transparent $light_btn_color transparent transparent;
+}

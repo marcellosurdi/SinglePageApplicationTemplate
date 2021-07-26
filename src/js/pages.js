@@ -4,7 +4,7 @@ export const pages = {
     <div class="content 404 align-center">
       <span class="margin-top-big radius-circle xlight-grey-background padding-big icon-unlink text-5xl text-faded-light"></span>
       <p class="margin-medium text-xxl text-faded-light" data-i18n="short-404-description"></p>
-      <a href="#" class="btn display-inline-block radius-5 light-btn-background padding-medium" data-i18n="back-to-home"></a>
+      <a href="#" class="margin-small display-inline-block left-arrow-btn display-relative dark-btn-background" data-i18n="back-to-home"></a>
     </div>
   </div>
   `,
@@ -12,13 +12,19 @@ export const pages = {
   backgrounds: `
   <div>
     <div class="content backgrounds">
-      <h2 data-i18n="backgrounds"></h2>
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        <span data-i18n="backgrounds"></span>
+      </div>
+
+      <h2 class="margin-medium" data-i18n="backgrounds"></h2>
+
       <p class="margin-medium" data-i18n="short-backgrounds-description"></p>
       <div class="float-container">
-      <div class="float-item dark-a-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-a-background</div>
-      <div class="float-item light-a-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-a-background</div>
-      <div class="float-item dark-btn-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-btn-background</div>
-      <div class="float-item light-btn-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-btn-background</div>
+        <div class="float-item dark-a-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-a-background</div>
+        <div class="float-item light-a-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-a-background</div>
+        <div class="float-item dark-btn-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-btn-background</div>
+        <div class="float-item light-btn-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.light-btn-background</div>
         <div class="float-item xxdark-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.xxdark-grey-background</div>
         <div class="float-item xdark-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.xdark-grey-background</div>
         <div class="float-item dark-grey-background padding-medium w-2 w-1366-3 w-864-4 w-640-6 w-424-12 text-1366-medium text-424-big">.dark-grey-background</div>
@@ -34,10 +40,32 @@ export const pages = {
   </div>
   `,
 
+  'dynamic-content': `
+  <div>
+    <div class="content dynamic-content">
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        <span data-i18n="dynamic-content"></span>
+      </div>
+
+      <h2 class="margin-medium" data-i18n="dynamic-content"></h2>
+
+      <p class="margin-medium" data-i18n="short-dynamic-content-description"></p>
+      <div id="dynamic-content-sample" class="display-relative lazy preload text-faded-light" style="min-height: 300px;"></div>
+    </div>
+  </div>
+  `,
+
   icons: `
   <div>
     <div class="content icons">
-      <h2 data-i18n="icons"></h2>
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        <span data-i18n="icons"></span>
+      </div>
+
+      <h2 class="margin-medium" data-i18n="icons"></h2>
+
       <p class="margin-medium" data-i18n="short-icons-description"></p>
       <div class="float-container">
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-user icon-medium text-medium"></span> .icon-user</div>
@@ -51,6 +79,7 @@ export const pages = {
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-unlink icon-medium text-medium"></span> .icon-unlink</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-menu icon-medium text-medium"></span> .icon-menu</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-checkmark icon-medium text-medium"></span> .icon-checkmark</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-spinner rotate-icon icon-medium text-medium"></span> .icon-spinner</div>
       </div>
     </div>
   </div>
@@ -59,18 +88,27 @@ export const pages = {
   forms: `
   <div>
     <div class="content forms">
-      <h2 data-i18n="forms">Form</h2>
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        <span data-i18n="forms"></span>
+      </div>
+
+      <h2 class="margin-medium" data-i18n="forms">Form</h2>
+
       <form id="form-example">
         <fieldset>
           <legend>Legend1</legend>
-          <label for="text1">Label 1</label>
-          <input id="text1" type="text" placeholder="#text1">
+          <div class="float-container form-section error">
+            <label for="text1">Label 1</label>
+            <input id="text1" type="text" placeholder="#text1">
+          </div>
+
           <div class="float-container form-section">
             <div class="float-item w-6 padding-right-medium">
               <label for="text2">Label 2</label>
               <input id="text2" type="text" placeholder="#text2">
             </div>
-            <div class="float-item w-6 error">
+            <div class="float-item w-6">
               <label for="text3">Label 3</label>
               <input id="text3" type="text" placeholder="#text3">
             </div>
@@ -134,6 +172,7 @@ export const pages = {
         <li><a href="#notifications"><strong data-i18n="notifications"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#overlay"><strong>Overlay</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
         <li><a href="#query-string?var1=1&var2=2&var3=3"><strong>Query string</strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
+        <li><a href="#dynamic-content"><strong data-i18n="dynamic-content"></strong><span class="arrow"><span class="white-background icon-arrow icon-small text-small"></span></span></a></li>
       </ul>
     </div>
   </div>
@@ -142,7 +181,12 @@ export const pages = {
   notifications: `
   <div>
     <div class="content notifications">
-      <h2 data-i18n="notifications"></h2>
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        <span data-i18n="notifications"></span>
+      </div>
+
+      <h2 class="margin-medium" data-i18n="notifications"></h2>
       <p data-i18n="short-notifications-description"></p>
       <p>
         <span data-i18n="notification-btn-1"></span><br>
@@ -167,7 +211,12 @@ export const pages = {
   overlay: `
   <div>
     <div class="content overlay">
-      <h2>Overlay</h2>
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        Overlay
+      </div>
+
+      <h2 class="margin-medium">Overlay</h2>
       <p data-i18n="short-overlay-description"></p>
       <p>
         <span data-i18n="overlay-btn-1"></span><br>
@@ -188,7 +237,12 @@ export const pages = {
   'query-string': `
   <div>
     <div class="content query-string">
-      <h2>Query string</h2>
+      <div class="xlight-grey-background padding-medium align-center">
+        <a href="#" class="margin-small display-inline-block right-arrow-btn display-relative dark-btn-background">Home</a>
+        Query string
+      </div>
+
+      <h2 class="margin-medium">Query string</h2>
       <p class="margin-medium" data-i18n="short-query-string-description"></p>
       <h3 data-i18n="query-string-title"></h3>
       <div id="show-vars" class="xlight-grey-background padding-medium"></div>

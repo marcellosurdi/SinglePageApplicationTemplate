@@ -3,7 +3,7 @@
  * @author Marcello Surdi
  *
  * @desc
- * Contiene il componente **Notification**, un messaggio di notifica in stile toast.
+ * The Notification function shows or hides a notification (toast message).
  */
 
 import { I18n } from './i18n';
@@ -12,12 +12,12 @@ let timeout_id = 0;
 
 /**
  * @desc
- * Mostra o nasconde un messaggio di notifica
+ * Shows or hides a notification (toast message).
  *
- * @param {boolean|string} type false per nascondere la notifica, 'warning'|'alert'|'notice'|'success' per mostrarla
- * @param {string} text Testo da visualizzare (può contenere HTML)
- * @param {number} [timeout=7000] Indica il numero di millisecondi dopo i quali la notifica deve scomparire, 0 per una notifica persistente
- * @param {function} [onConfirm] Una funzione da eseguire se l'utente conferma l'operazione corrente
+ * @param {boolean|string} type false hides the message, 'warning'|'alert'|'notice'|'success' shows it
+ * @param {string} text Text to display (can contain HTML)
+ * @param {number} [timeout=7000] Number of milliseconds after wich the notification must disappear, 0 to get a persistent notification
+ * @param {function} [onConfirm] A function to be invoked if the user confirms the current operation
  *
  * @example
  * Notification( 'alert', 'text', 0, () => {} );
@@ -66,7 +66,6 @@ export function Notification( type, text, timeout = 7000, onConfirm ) {
   notification.classList.add( type + '-background' );
   notification.querySelector( 'p.text' ).innerHTML = text;
 
-  // Evita che la classe venga aggiunta nel DOM contemporaneamente al div
   setTimeout( () => notification.classList.add( 'show' ), 0 );
 
   if( timeout ) {

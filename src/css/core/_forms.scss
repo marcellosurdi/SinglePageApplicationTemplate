@@ -1,6 +1,6 @@
 .form-section { margin-top: 10px; }
 fieldset { margin-top: 15px; border: 1px solid $xlight_grey_color; }
-legend { margin-left: 20px; border-radius: 5px; padding: 5px 10px; }
+legend { margin-left: 20px; border-radius: 5px; padding: 5px 10px; font-weight: bold; }
 label { display: block; }
 input, textarea, select {
   @include appearance;
@@ -88,5 +88,5 @@ label.checkboxradio {
   }
 }
 
-label.error, .error label { color: #ac302e; }
+label.error, .error label { color: $dark_alert_color; }
 .error input, .error textarea, .error select, input.error, textarea.error, select.error { border: 2px solid $dark_alert_color; color: $dark_alert_color; }

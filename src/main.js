@@ -15,12 +15,51 @@ import { Notification } from './js/core/notification';
 Route.prototype = {
   constructor: Route,
 
+  beforeAnimationOnDynamiccontent: function() {
+    setTimeout( loadContent, 2000 );
+
+    function loadContent() {
+      fetch( 'inc/sample-content.html' )
+        .then( response => {
+          if( response.ok ) return response.text();
+          else throw( response.status )
+        } )
+        .then( text => {
+          const container = document.getElementById( 'dynamic-content-sample' );
+          container.innerHTML = text;
+          container.classList.remove( 'lazy', 'preload' );
+          container.classList.add( 'complete' );
+        } )
+        .catch( error => console.log( error ) )
+    }
+  },
+
+
   beforeAnimationOnForms: function() {
-    document.getElementById( 'form-example' ).addEventListener( 'submit', ( e ) => {
+    document.getElementById( 'form-example' ).addEventListener( 'submit', function( e ) {
+      console.log( 'submit' );
+
       e.preventDefault();
-      console.log( 'Form submit!' );
+
+      const btn = this.querySelector( 'button[type=submit]' );
+      const icon = btn.querySelector( 'span' );
+
+      btn.disabled = true;
+      btn.classList.add( 'disable-background' );
+      btn.classList.remove( 'light-btn-background' );
+      icon.classList.add( 'icon-spinner', 'rotate-icon' );
+      icon.classList.remove( 'icon-checkmark' );
+
+      setTimeout( ()=>{
+        btn.disabled = false;
+        btn.classList.add( 'light-btn-background' );
+        btn.classList.remove( 'disable-background' );
+        icon.classList.add( 'icon-checkmark' );
+        icon.classList.remove( 'icon-spinner', 'rotate-icon' );
+      }, 4000 )
     } );
   },
+
 
   beforeAnimationOnNotifications: function() {
     document.getElementById( 'notification1' ).addEventListener( 'click', () => {
@@ -40,6 +79,7 @@ Route.prototype = {
     } );
   },
 
+
   beforeAnimationOnOverlay: function() {
     document.getElementById( 'overlay1' ).addEventListener( 'click', () => {
       Overlay();
@@ -53,6 +93,7 @@ Route.prototype = {
         overlay.removeEventListener( 'click', close );
       } );
     } );
+
 
     document.getElementById( 'overlay3' ).addEventListener( 'click', () => {
       Overlay( true, true );

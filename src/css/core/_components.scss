@@ -24,7 +24,7 @@ div#notification {
   transition: all .25s ease-out;
 }
 div#notification.show { @include transform(translate3d(0,250px,0)); }
-div#notification div.container-max-width { padding-right: 40px; }
+div#notification div.container-max-width { padding-right: 50px; }
 div#notification a.icon-close { position: absolute; top: 10px; right: 10px; }
 .success-btn-background, .success-background a { background-color: $dark_success_color; text-decoration: none; color: $white_color; }
 .alert-btn-background, .alert-background a { background-color: $dark_alert_color; text-decoration: none; color: $white_color; }

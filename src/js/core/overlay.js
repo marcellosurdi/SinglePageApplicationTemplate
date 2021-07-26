@@ -3,20 +3,20 @@
  * @author Marcello Surdi
  *
  * @desc
- * Contiene il componente **Overlay**.
+ * The Overlay function shows or hides an overlay.
  */
 
  /**
   * @desc
-  * Mostra o nasconde l'overlay
+  * Shows or hides an overlay.
   *
-  * @param {boolean} [action=true] - true per apertura, false per la chiusura dell'overlay
-  * @param {boolean} [spinner=false] Indica se mostrare o meno lo spinner di caricamento
-  * @param {number} [zIndex=10] Il valore della proprietà CSS z-index
-  * @returns {HTMLDivElement|undefined} Restituisce l'overlay contestualmente all'apertura o undefined in chiusura
+  * @param {boolean} [action=true] - true to show, false to hide the overlay
+  * @param {boolean} [spinner=false] Denotes whether or not to show the loading spinner
+  * @param {number} [zIndex=10] CSS z-index property
+  * @returns {HTMLDivElement|undefined} Returns the overlay object (undefined if the overlay is closed)
   *
   * @example
-  * const overlay = Overlay( true );
+  * const overlay = Overlay();
   */
 export function Overlay( action = true, spinner = false, zIndex = 10 ) {
   let overlay = document.getElementById( 'overlay' );

@@ -1,8 +1,9 @@
 /**
- * @module i18n
+ * @module js/core/i18n
+ * @author Marcello Surdi
  *
  * @desc
- * I18n
+ * The I18n function manages translations.
  */
 
 import { l10n } from './../l10n';
