@@ -1,8 +1,9 @@
 /**
- * @module route
+ * @module js/core/route
+ * @author Marcello Surdi
  *
  * @desc
- * Route
+ * The Route function manages page routing
  */
 
 import './../../css/core/pageslider.scss';

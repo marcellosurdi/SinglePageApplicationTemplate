@@ -1,10 +1,11 @@
 /**
- * @module sidenav
+ * @module js/core/sidenav
+ * @author Marcello Surdi
  *
  * @desc
- * Sidenav
+ * The Sidenav function manage sidenav with multilevel menu
  *
- * @see https://www.w3schools.com/howto/howto_js_sidenav.asp
+ * @see {@link https://www.w3schools.com/howto/howto_js_sidenav.asp|Sidenav tutorial on W3C}
  */
 
 import './../../css/core/sidenav.scss';

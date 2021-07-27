@@ -5,7 +5,7 @@ Single page application (SPA) is a dependency-free template using predefined CSS
 
 ## Usage
 Make sure that you have [Node.js](http://nodejs.org/) installed, then:
-1. Fork and clone the [GitHub repository](https://github.com/marcellosurdi/Webpack5Template).
+1. Fork and clone the [GitHub repository](https://github.com/marcellosurdi/SinglePageApplicationTemplate).
 2. From the command line go to the local SinglePageApplicationTemplate folder.
 3. Run `npm install` and wait for the necessary modules installation. [Webpack](https://webpack.js.org/guides/installation/#root) will be installed, look at the other dev dependencies in `package.json` file.
 
@@ -28,3 +28,7 @@ npm run jsdoc
 After above command execution you will be able to see JSDoc documentation in `docs` folder.
 
 That's it!
+
+## Links
+1. [Online demo](https://www.marcellosurdi.name/demo/single-page-application-template/index.html)
+2. [Source code documentation](https://www.marcellosurdi.name/docs/single-page-application-template/)

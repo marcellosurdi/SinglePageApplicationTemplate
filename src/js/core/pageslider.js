@@ -1,15 +1,22 @@
 /**
- * @module pageslider
+ * @module js/core/pageslider
+ * @author Marcello Surdi
  *
  * @desc
- * PageSlider
+ * The PageSlider function manages page transitions
+ *
+ * @see {@link https://github.com/ccoenraets/PageSlider|Christophe Coenraets's PageSlider}
  */
 
 
 export function PageSlider( container ) {
   let current_page, history = [];
 
-  // Use this function if you want PageSlider to automatically determine the sliding direction based on the state history
+  /**
+   * Use this function if you want PageSlider to automatically determine the sliding direction based on the state history.
+   *
+   * @param {string} html Current page content
+   */
   this.slidePage = function( html ) {
     let l = history.length, page = window.location.hash;
 
@@ -29,7 +36,12 @@ export function PageSlider( container ) {
     }
   }
 
-  // Use this function directly if you want to control the sliding direction outside PageSlider
+  /**
+   * Use this function directly if you want to control the sliding direction outside PageSlider.
+   *
+   * @param {string} html Current page content
+   * @param {string} from Slide direction
+   */
   this.slidePageFrom = function( html, from ) {
     // Add current page in div#container
     container.insertAdjacentHTML( 'beforeend', html );

@@ -1,3 +1,11 @@
+/**
+ * @module js/pages
+ *
+ * @desc
+ * The content of pages
+ */
+
+
 export const pages = {
   404: `
   <div>

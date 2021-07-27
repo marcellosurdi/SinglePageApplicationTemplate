@@ -1,3 +1,11 @@
+/**
+ * @module js/l10n
+ *
+ * @desc
+ * Strings for translation
+ */
+
+
 export const l10n = {
   'it': {
     'account':'Profilo',

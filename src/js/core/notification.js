@@ -10,6 +10,7 @@ import { I18n } from './i18n';
 
 let timeout_id = 0;
 
+
 /**
  * @desc
  * Shows or hides a notification (toast message).
