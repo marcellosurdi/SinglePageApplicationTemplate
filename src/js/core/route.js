@@ -13,7 +13,7 @@ import { I18n } from './i18n';
 
 
 export function Route() {
-  let page = null;
+  let details = null;
   const self = this;
   const container = document.getElementById( 'container' );
   const page_slider = new PageSlider( container );
@@ -21,17 +21,18 @@ export function Route() {
   container.addEventListener( 'beforeAnimation', searchOnPrototype );
   container.addEventListener( 'beforeAnimation', i18n.setLanguage );
   container.addEventListener( 'afterAnimation', searchOnPrototype );
-  window.addEventListener( 'hashchange', route );
-  route();
+  window.addEventListener( 'hashchange', doSlide );
+  doSlide();
 
 
   function getPageDetails() {
-    let query_string = window.location.hash.slice( 1 );
-    if( !query_string ) {
-      query_string = 'index';
+    let hash = window.location.hash.slice( 1 );
+    if( !hash ) {
+      hash = 'index';
     }
-    let arr = query_string.replace( '?', '&' ).split( '&' );
-    let page_name = arr[0];
+
+    let arr = hash.replace( '?', '&' ).split( '&' );
+    hash = arr[0];
 
     arr.splice( 0, 1 );
     let l = arr.length;
@@ -43,23 +44,23 @@ export function Route() {
       }
     }
 
-    return { hash: page_name, params: params };
+    return { hash: hash, params: params };
   }
 
-  function searchOnPrototype( e ) {
-    let method = e.type + 'On' + page.hash.charAt(0).toUpperCase() + page.hash.replace( '-', '' ).slice(1);
-    if( self[ method ] ) {
-      self[ method ]( page.params );
+  function doSlide() {
+    details = getPageDetails();
+
+    if( pages[ details.hash ] ) {
+      page_slider.slidePage( pages[ details.hash ] );
+    } else {
+      page_slider.slidePage( pages[ 404 ] );
     }
   }
 
-  function route() {
-    page = getPageDetails();
-
-    if( pages[ page.hash ] ) {
-      page_slider.slidePage( pages[ page.hash ] );
-    } else {
-      page_slider.slidePage( pages[ 404 ] );
+  function searchOnPrototype( e ) {
+    let method = e.type + 'On' + details.hash.charAt(0).toUpperCase() + details.hash.replace( '-', '' ).slice(1);
+    if( self[ method ] ) {
+      self[ method ]( details );
     }
   }
 }

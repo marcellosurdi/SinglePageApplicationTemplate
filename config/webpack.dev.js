@@ -36,9 +36,7 @@ module.exports = ( env, argv ) => {
         port: 3001,
       },
 
-      plugins: [
-        new webpack.EnvironmentPlugin( { BUILD: false } ),
-      ],
+      plugins: [],
     }
   );
 };

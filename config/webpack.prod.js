@@ -32,8 +32,6 @@ module.exports = ( env, argv ) => {
       },
 
       plugins: [
-        new webpack.EnvironmentPlugin( { BUILD: ( env && env.BUILD ) ? env.BUILD : false } ),
-
         new MiniCssExtractPlugin({
           filename: 'css/[name].css',
         }),

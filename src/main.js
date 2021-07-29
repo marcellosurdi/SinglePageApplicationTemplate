@@ -101,10 +101,10 @@ Route.prototype = {
     } );
   },
 
-  beforeAnimationOnQuerystring: function( params ) {
+  beforeAnimationOnQuerystring: function( details ) {
     let string = '';
-    for( let item in params ) {
-      string += item + ':<strong>' + params[ item ] + '</strong> - ';
+    for( let item in details.params ) {
+      string += item + ':<strong>' + details.params[ item ] + '</strong> - ';
     }
     document.getElementById( 'show-vars' ).innerHTML = string.substr( 0, ( string.length - 2 ) );
   },

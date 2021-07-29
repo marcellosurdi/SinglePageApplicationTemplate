@@ -10,28 +10,28 @@
 
 
 export function PageSlider( container ) {
-  let current_page, history = [];
+  let current_page, _history = [];
 
   /**
-   * Use this function if you want PageSlider to automatically determine the sliding direction based on the state history.
+   * Use this function if you want PageSlider to automatically determine the sliding direction based on the state _history.
    *
    * @param {string} html Current page content
    */
   this.slidePage = function( html ) {
-    let l = history.length, page = window.location.hash;
+    let l = _history.length, hash = window.location.hash;
 
     // First page load
     if( l === 0 ) {
-      history.push( page );
+      _history.push( hash );
       this.slidePageFrom( html );
       return;
     }
 
-    if( page === history[ l - 2 ] ) {
-      history.pop();
+    if( hash === _history[ l - 2 ] ) {
+      _history.pop();
       this.slidePageFrom( html, 'left' );
     } else {
-      history.push( page );
+      _history.push( hash );
       this.slidePageFrom( html, 'right' );
     }
   }
