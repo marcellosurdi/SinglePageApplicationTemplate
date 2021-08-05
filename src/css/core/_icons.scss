@@ -59,6 +59,30 @@
 .es { background-position: -72px 0; }
 .de { background-position: -96px 0; }
 
+.icon-login:before {
+  content: "\e911";
+}
+.icon-logout:before {
+  content: "\e912";
+}
+.icon-dollar:before {
+  content: "\e90e";
+}
+.icon-lifebuoy:before {
+  content: "\e910";
+}
+.icon-signup:before {
+  content: "\e90d";
+}
+.icon-company:before {
+  content: "\e90f";
+}
+.icon-mail:before {
+  content: "\e90b";
+}
+.icon-home:before {
+  content: "\e90c";
+}
 .icon-spinner:before {
   content: "\e906";
 }

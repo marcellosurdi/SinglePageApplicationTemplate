@@ -1,7 +1,7 @@
 {
   "name": "single-page-application-template",
   "description": "Single page application (SPA) is a dependency-free template using predefined CSS styles, page transitions, sidenav with multilevel menu, icons, toast messages, overlay and translations management",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [],
   "main": "main.js",
   "repository": {},

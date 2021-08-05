@@ -76,6 +76,14 @@ export const pages = {
 
       <p class="margin-medium" data-i18n="short-icons-description"></p>
       <div class="float-container">
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-login icon-medium text-medium"></span> .icon-login</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-logout icon-medium text-medium"></span> .icon-logout</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-dollar icon-medium text-medium"></span> .icon-dollar</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-lifebuoy icon-medium text-medium"></span> .icon-lifebuoy</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-signup icon-medium text-medium"></span> .icon-signup</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-company icon-medium text-medium"></span> .icon-company</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-mail icon-medium text-medium"></span> .icon-mail</div>
+        <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-home icon-medium text-medium"></span> .icon-home</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-user icon-medium text-medium"></span> .icon-user</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-phone icon-medium text-medium"></span> .icon-phone</div>
         <div class="float-item margin-medium w-2 w-1152-3 w-864-4 w-582-6 w-424-12"><span class="light-grey-background icon-faq icon-medium text-medium"></span> .icon-faq</div>
