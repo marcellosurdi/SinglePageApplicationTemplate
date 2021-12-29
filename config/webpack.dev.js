@@ -27,9 +27,10 @@ module.exports = ( env, argv ) => {
       },
 
       devServer: {
-        contentBase: paths.static,
-
-        watchContentBase: true,
+        static: {
+          directory: paths.static,
+          watch: true,
+        },
 
         hot: true,
 
